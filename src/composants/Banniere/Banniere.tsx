@@ -1,3 +1,5 @@
+import "./Banniere.scss";
+
 type PropBanniere = {
   titre?: string;
   texte: string;
@@ -8,8 +10,12 @@ const Banniere: React.FC<PropBanniere> = ({ texte, imageURL, titre }) => {
   return (
     <div className="conteneurBanniere">
       <div className="blocTexte">
-        {titre ? <h2 className="titreBanniere">{titre}</h2> : <></>}
-        <p className="texteBanniere">{texte}</p>
+        {titre ? (
+          <h2 className="titreBanniere elementTitre">{titre}</h2>
+        ) : (
+          <></>
+        )}
+        <p className="texteBanniere elementTexte">{texte}</p>
       </div>
       <img src={imageURL} alt={titre} />
     </div>

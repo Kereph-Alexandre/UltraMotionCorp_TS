@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.conteneurBanniere {
+  background-color: $couleurAccent;
+  display: flex;
+
+  justify-content: space-between;
+  height: 400px;
+
+  .blocTexte {
+    padding: 3em;
+    flex-grow: 1;
+  }
+
+  .titreBanniere {
+    text-align: center;
+  }
+
+  .texteBanniere {
+    padding-top: 1em;
+  }
+
+  img {
+    object-fit: cover;
+    width: 40vw;
+  }
+}
