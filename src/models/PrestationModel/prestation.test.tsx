@@ -5,7 +5,7 @@ describe("Création d'une prestation", () => {
     const prestation = new PrestationModel(
       1,
       "title",
-      10,
+      "10",
       "",
       "image.jpg",
       "location",
@@ -20,7 +20,7 @@ describe("Création d'une prestation", () => {
     const prestation = new PrestationModel(
       1,
       "titre",
-      10,
+      "10",
       "description",
       "image.jpg",
       "localisation",
