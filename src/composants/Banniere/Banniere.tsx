@@ -6,6 +6,11 @@ type PropBanniere = {
   imageURL: string; //On changera en File type plus tard
 };
 
+/**
+ * Affiche une bannière comprenant un Titre, un texte et une image
+ * @param param0
+ * @returns
+ */
 const Banniere: React.FC<PropBanniere> = ({ texte, imageURL, titre }) => {
   return (
     <div className="conteneurBanniere">
