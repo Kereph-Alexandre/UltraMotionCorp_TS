@@ -3,7 +3,7 @@ class PrestationModel {
   idEntreprise: number;
   titre: string;
   categories: string[];
-  tauxHoraire: string;
+  tauxHoraire: number;
   localisation: string;
   description: string;
   imageURL: string;
@@ -14,7 +14,7 @@ class PrestationModel {
   constructor(
     idEntreprise: number,
     titre: string,
-    tauxHoraire: string,
+    tauxHoraire: number,
     description: string = "",
     imageURL: string,
     localisation: string,
