@@ -1,20 +1,33 @@
 @import "./index.scss";
 
 .cartePrestation {
+  border-radius: 10px !important;
   display: flex;
   flex: 1 1 auto;
 
   min-height: 300px;
   min-width: 300px;
 
-  width: 20vw;
+  width: min-content;
 
   .enteteCarte,
   .piedDePageCarte {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
+  .enteteCarte {
+    width: fit-content;
+  }
+
+  .piedDePageCarte {
+    width: auto;
+  }
+
+  .prixCarte {
+    margin: 0 1em;
+  }
   .texteCarte {
     margin: 1em 0;
 

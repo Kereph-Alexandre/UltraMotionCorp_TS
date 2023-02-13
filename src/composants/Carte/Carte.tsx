@@ -18,10 +18,10 @@ const Carte: React.FC<PrestationModel> = (props) => {
     <Card className="cartePrestation">
       <CardActionArea>
         <CardMedia component="img" image={props.imageURL} />
-        <CardContent className="contenuDeCarte">
+        <CardContent className="contenuCarte">
           <div className="enteteCarte">
             <h2 className="elementTitre titreCarte">{props.titre}</h2>
-            <p className="elementTexte">{props.tauxHoraire}</p>
+            <p className="elementTexte prixCarte">{props.tauxHoraire}€/H</p>
           </div>
           <Divider />
           <p className="elementTexte texteCarte">{props.description}</p>
