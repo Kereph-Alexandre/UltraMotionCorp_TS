@@ -1,4 +1,4 @@
-import "./Banniere.scss";
+import "../../styles/Banniere.scss";
 
 type PropBanniere = {
   titre?: string;

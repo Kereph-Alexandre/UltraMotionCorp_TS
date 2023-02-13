@@ -4,6 +4,8 @@ $couleurDominante: #1237a1;
 $couleurComplementaire: #f5cb02;
 $couleurAccent: rgba(241, 238, 238, 0.5);
 
+$couleurOmbre: rgba(#000000, $alpha: 0.5);
+
 .elementTitre {
   font-family: "Righteous", sans-serif;
   font-style: normal;
@@ -12,6 +14,7 @@ $couleurAccent: rgba(241, 238, 238, 0.5);
   line-height: 22px;
   text-transform: uppercase;
   letter-spacing: 0.16em;
+  color: $couleurDominante;
 }
 
 .elementTexte {
@@ -21,4 +24,5 @@ $couleurAccent: rgba(241, 238, 238, 0.5);
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.16em;
+  color: $couleurDominante;
 }
