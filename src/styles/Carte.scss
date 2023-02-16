@@ -3,12 +3,21 @@
 .cartePrestation {
   border-radius: 10px !important;
   display: flex;
-  flex: 1 1 auto;
+  flex: 1 1 300px;
+
+  flex-direction: column;
 
   min-height: 300px;
   min-width: 300px;
 
   width: min-content;
+
+  .contenuCarte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 
   .enteteCarte,
   .piedDePageCarte {
@@ -30,8 +39,16 @@
   .texteCarte {
     margin: 1em 0;
 
-    display: -webkit-box;
     -webkit-line-clamp: 3;
+  }
+
+  .titreCarte {
+    -webkit-line-clamp: 1;
+  }
+
+  .titreCarte,
+  .texteCarte {
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -46,6 +63,7 @@
 
   img {
     object-fit: cover;
+    height: 50%;
   }
 
   &:hover {
