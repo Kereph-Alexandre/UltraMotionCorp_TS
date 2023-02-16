@@ -1,0 +1,10 @@
+@import "./index.scss";
+
+.conteneurCartes {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  gap: 2em;
+}
