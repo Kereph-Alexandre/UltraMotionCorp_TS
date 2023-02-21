@@ -1,3 +1,40 @@
+# UltraMotionCorp (Projet Fil Rouge)
+
+Ce projet fil rouge avait pour but de travailler au développement d'une application permettant la proposiution et vente de services par des prestataires à des clients au travers de 6 modules : 
+- Inscription
+- Recherche de prestation
+- Communication
+- Devis
+- Evaluation
+- Monitoring
+
+Ce projet a été initié à l'occasion de ma récente formation POEC développeur Front-End et n'avait pas pour but de finaliser l'application mais de mettre en pratique les compétences acquises en formation : 
+- L'organisation dans un cadre agile
+- L'utilisation de Librairies adaptées
+
+**Tout d'abord réalisé en React JS par choix de groupe, j'ai ici choisi de reprendre ce projet en React TS afin de me familiariser avec les particularités apportées par TS**
+
+
+
+# Technologies utilisées
+
+- React TS
+- JSON-server
+
+- Sass
+- MaterialUI
+
+# Lancement de l'application
+
+Après avoir installé les dépendances 
+> npm i
+
+Lancez JSON-server avec le script
+> npm run json-server
+
+Lancez l'application 
+> npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
