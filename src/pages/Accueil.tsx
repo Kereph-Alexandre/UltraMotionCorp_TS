@@ -4,6 +4,10 @@ import GrilleCartes from "../composants/Presentation/GrilleCartes/GrilleCartes";
 import PrestationModel from "../models/PrestationModel/prestation.model";
 import PrestationService from "../service/prestation.service";
 
+/**
+ * Récupère l'ensemble des prestations disponibles pour les afficher dans la page Accueil
+ * @returns La page d'accueil du site, contenant une bannière de présentation, une barre de recherche (ultérieurement) et un affichage de prestations mises en avant (à affiner)
+ */
 const Accueil = () => {
   const [listePrestations, setListePrestations] = useState<PrestationModel[]>(
     []
@@ -32,7 +36,7 @@ const Accueil = () => {
       {listePrestations.length > 0 ? (
         <GrilleCartes listePrestations={listePrestations} />
       ) : (
-        <p>...Loading</p>
+        <p>...Loading</p> //Travailler sur un composant à part, plus élaboré ?
       )}
     </>
   );
