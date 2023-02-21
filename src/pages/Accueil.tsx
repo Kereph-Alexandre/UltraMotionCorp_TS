@@ -9,6 +9,11 @@ const Accueil = () => {
     []
   );
 
+  const titrePresentation: string = "Projet UltraMotionCorp";
+
+  const textPresentation: string =
+    "Bienvenue sur le projet UltraMotionCorps. D'abord réalisé (en partie) en tant que projet fil rouge durant ma formation POEC Développeur Front-End en ReactJS, je le reprend ici en utilisant ReactTS.  ";
+
   useEffect(() => {
     PrestationService.obtenirPrestations().then((prestations) => {
       setListePrestations(prestations);
@@ -19,8 +24,8 @@ const Accueil = () => {
   return (
     <>
       <Banniere
-        titre="test"
-        texte="truc"
+        titre={titrePresentation}
+        texte={textPresentation}
         imageURL="https://img.freepik.com/free-photo/handyman-construction-site-process-drilling-wall-with-perforator_169016-12114.jpg?w=1800&t=st=1676042624~exp=1676043224~hmac=62e6514264dca8a3d4f75a45d6416e64e13505af42ebbb719575ced84e746053"
       />
 
