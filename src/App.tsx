@@ -1,10 +1,10 @@
 import React from "react";
-import Accueil from "./pages/Accueil";
+import Router from "./routes/Router";
 
 function App() {
   return (
     <div className="App">
-      <Accueil />
+      <Router />
     </div>
   );
 }
