@@ -5,7 +5,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import "../../styles/BarreDeRecherche.scss";
 
 const BarreDeRecherche: React.FC = () => {
-  const [motRecherche, changerMotRecherche] = useState("");
+  const [motRecherche, changerMotRecherche] = useState<string>("");
   const navigation = useNavigate();
 
   const soumettreRecherche = (event: React.FormEvent<HTMLElement>): void => {
