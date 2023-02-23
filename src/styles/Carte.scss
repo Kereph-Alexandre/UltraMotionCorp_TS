@@ -3,14 +3,12 @@
 .cartePrestation {
   border-radius: 10px !important;
   display: flex;
-  flex: 1 1 300px;
 
   flex-direction: column;
 
-  min-height: 300px;
+  height: 500px;
   min-width: 300px;
-
-  width: min-content;
+  width: 22vw;
 
   .contenuCarte {
     display: flex;
