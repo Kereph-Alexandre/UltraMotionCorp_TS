@@ -1,0 +1,41 @@
+@import "./index.scss";
+
+$arrondi: 5px;
+
+.formRecherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1em;
+}
+
+.champRecherche {
+  box-sizing: border-box;
+  width: 30vw;
+  height: 2em;
+  border-radius: $arrondi 0 0 $arrondi;
+  border: solid $couleurDominante 3px;
+
+  color: black;
+  font-family: "Righteous", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 1em;
+}
+
+.boutonRecherche {
+  height: 2em;
+  display: flex;
+  align-items: center;
+
+  background-color: $couleurDominante;
+  border: none;
+
+  border-radius: 0 $arrondi $arrondi 0;
+
+  font-size: 20px;
+}
+.iconeRecherche {
+  color: white;
+}

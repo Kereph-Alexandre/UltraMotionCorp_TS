@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
+
+import "../../styles/BarreDeRecherche.scss";
 
 const BarreDeRecherche: React.FC = () => {
   const [motRecherche, changerMotRecherche] = useState("");
@@ -15,14 +18,18 @@ const BarreDeRecherche: React.FC = () => {
   };
 
   return (
-    <form onSubmit={soumettreRecherche}>
+    <form className="formRecherche" onSubmit={soumettreRecherche}>
       <input
+        className="champRecherche"
         type="text"
         value={motRecherche}
         onChange={(event) => changerMotRecherche(event.target.value)}
+        placeholder="Saisissez votre recherche ici"
       />
 
-      <button onClick={soumettreRecherche}>OK</button>
+      <button className="boutonRecherche" onClick={soumettreRecherche}>
+        <SearchIcon className="iconeRecherche" />
+      </button>
     </form>
   );
 };
