@@ -1,0 +1,34 @@
+@import "./index.scss";
+
+header {
+  background-color: $couleurDominante;
+
+  padding: 0 100px;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  & ul {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 2em;
+
+    & a {
+      color: $couleurComplementaire;
+
+      font-family: "Righteous", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+
+      text-decoration: none;
+    }
+  }
+}
